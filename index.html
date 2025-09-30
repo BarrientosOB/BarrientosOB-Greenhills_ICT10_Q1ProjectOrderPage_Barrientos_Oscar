@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    
+    <title>Food Ordering System</title>
+
+
+    <style>
+
+    div#div1{
+        color: white;
+        background-color:gray;
+        font-size: 25px;
+        text-align: center;
+         border-radius: 25px;
+    }
+
+    div#div2{
+        color: white;
+        background-color:gray;
+        font-size: 25px;
+        text-align: center;
+         border-radius: 25px;
+    }
+   
+   nav{
+        background-color: gray;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+     }
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+     }
+    a:hover{
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+     }
+
+     body{
+        background-color: pink;
+        color: white;
+     }
+   
+     .menu-item {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+        margin-bottom: 10px;
+     }
+
+     .menu-item img {
+    padding-left: 40px; 
+    
+}
+   
+   
+   </style>
+
+</head>
+<body>
+    
+     <nav>
+        <ul>   
+            <a href="">Home</a> |
+            <a href="">Contact Us</a> |
+            <a href="">Order</a> |
+        </ul>
+    </nav>
+    
+    
+    
+    <div id="div1"><h1>Food Ordering System</h1></div>
+    
+    <div id="div2"><h3><strong>Menu:</strong></h3>
+    <form>
+        <div class="menu-item">
+            <img src="manakeesh.jpg" width="100">
+            <label for="menu1">Beef Manakeesh</label>
+            <input type="checkbox" id="menu1" value="150">
+        </div>
+        <div class="menu-item">
+            <img src="chicken.jpg" width="100">
+            <label for="menu2">Chicken Manakeesh</label>
+            <input type="checkbox" id="menu2" value="150">
+        </div>
+        <div class="menu-item">
+            <img src="beef.jpg" width="100">
+            <label for="menu3">Beef Shawarma</label>
+            <input type="checkbox" id="menu3" value="200">
+     </div>
+        <div class="menu-item">
+        <img src="shawarma.jpg" width="100">
+        <label for="menu4">Chicken Shawarma</label>
+        <input type="checkbox" id="menu4" value="200">
+        </div>
+    </form>
+    </div>
+    <br>
+    <div id="div2"h3><strong>Contact Details:</strong></h3>
+    <form>
+        <input type="text" id="Oscar" placeholder="Enter your name"><br>
+        <input type="text" id="Barrientos" placeholder="Enter your address"><br>
+        <input type="text" id="Panganiban" placeholder="Enter your number"><br>
+       <br>
+        <input type="button" value="Generate Message" py-click="ordering_form">
+        
+    </form>
+    </div>
+
+    <div id="yourname"></div>
+
+    <div id="output"></div>
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
